@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./Logo.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Templates - A Free Templates Collections</title>
+    <style>
+      #templates-container {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav>
+          <div id="logo">
+            <img src="./Logo.png" width="40" alt="Logo" />
+            <a href="#" id="logo-text">
+              <h1>Free</h1>
+              <h1>Templates</h1>
+            </a>
+          </div>
+          <!-- Desktop Navbar Links -->
+          <ul id="navlinks-container">
+            <li>
+              <a target="_blank" href="../index.html" title="Home">
+                <i class="ri-home-9-line"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="../main/about/about.html">About Us</a>
+            </li>
+            <li>
+              <a target="_blank" href="../components/index.html">Components</a>
+            </li>
+          </ul>
+
+          <div id="nav-right">
+            <!-- Social Links (Visible on Desktop) -->
+            <div id="social-links">
+              <a
+                href="https://github.com/workmdirfan29/Html_Css_Js_Projects"
+                target="_blank"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="https://x.com/mdirfan_23" target="_blank">
+                <i class="ri-twitter-fill"></i>
+              </a>
+            </div>
+            <!-- Hamburger Icon (Visible on Mobile) -->
+            <div id="hamburger-icon" class="hamburger">
+              <i class="ri-menu-3-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Sidebar Menu -->
+      <div id="sidebar" class="sidebar">
+        <div id="close-icon" class="close">
+          <i class="ri-close-fill"></i>
+        </div>
+        <ul>
+          <li>
+            <a target="_blank" href="#" title="Home">
+              <i class="ri-home-9-line"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="../main/about/about.html">About Us</a>
+          </li>
+          <li>
+            <a target="_blank" href="../components/index.html">Components</a>
+          </li>
+        </ul>
+      </div>
+
+      <main id="container">
+        <div id="intropage">
+          <h1>Templates</h1>
+          <p>
+            Explore various templates and components to enhance your web
+            development projects.
+          </p>
+          <div id="templates-button">
+            <a href="#">Get Started</a>
+            <a href="../components/index.html">Explore Components</a>
+          </div>
+        </div>
+
+        <div id="templates-container">
+          <!-- Left Sidebar -->
+          <div id="left-template-container">
+            <div id="left-template-wrapper">
+              <h2>Free Templates</h2>
+              <ul id="template-list">
+                <li
+                  id="template-01-content"
+                  class="template-item"
+                  data-template="01"
+                >
+                  Template 01
+                </li>
+                <li
+                  id="template-02-content"
+                  class="template-item"
+                  data-template="02"
+                >
+                  Template 02
+                </li>
+                <li
+                  id="template-03-content"
+                  class="template-item"
+                  data-template="03"
+                >
+                  Template 03
+                </li>
+                <li
+                  id="template-04-content"
+                  class="template-item"
+                  data-template="04"
+                >
+                  Template 04
+                </li>
+                <li
+                  id="template-05-content"
+                  class="template-item"
+                  data-template="05"
+                >
+                  Template 05
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Content Area -->
+          <div id="right-template-container">
+            <section class="template-content" id="template-01">
+              <div id="social">
+                <h2>Template 01</h2>
+                <div id="social-wrapper">
+                  <a target="_blank" class="social-live-prev" href="#"
+                    >Live Preview <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    class="social-github"
+                    href="https://github.com"
+                    ><i class="ri-github-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div id="image-template-container">
+                <img src="./assets/Computer.jpg" alt="" />
+              </div>
+            </section>
+
+            <section class="template-content" id="template-02">
+              <div id="social">
+                <h2>Template 02</h2>
+                <div id="social-wrapper">
+                  <a target="_blank" class="social-live-prev" href="#"
+                    >Live Preview <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    class="social-github"
+                    href="https://github.com"
+                    ><i class="ri-github-fill"></i
+                  ></a>
+                </div>
+              </div>
+              <div id="image-template-container">
+                <img src="./assets/Computer.jpg" alt="" />
+              </div>
+            </section>
+
+            <!-- Add more template content sections here (for Templates 03, 04, 05) -->
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div>
+          Powered by
+          <a target="_blank" href="#">Unlok Dev</a> | Crafted with care by
+          <a href="https://x.com/mdirfan_23">@mdirfan_23 </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // Get all the list items
+      const templateItems = document.querySelectorAll(".template-item");
+
+      // Add click event to each template item
+      templateItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Get the corresponding section ID based on data-template attribute
+          const templateId = item.getAttribute("data-template");
+
+          // Scroll to the section with the corresponding id
+          const targetSection = document.getElementById(
+            `template-${templateId}`
+          );
+
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

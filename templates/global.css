@@ -1,0 +1,169 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+#templates-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 7vw;
+  gap: 10px;
+}
+
+#left-template-container {
+  padding: 1vw 2vw;
+  width: 25%;
+  border-right: 1px solid #242424;
+}
+
+#left-template-container h2 {
+  margin-bottom: 1vw;
+  color: skyblue;
+  border-bottom: 1px solid #181818;
+}
+
+#template-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.template-item {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.template-item:hover {
+  background-color: #333;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#right-template-container {
+  padding: 1vw 2vw;
+  width: 75%;
+}
+
+#social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2vw;
+}
+
+.social-live-prev {
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.social-live-prev:hover {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #0d466e;
+}
+
+.social-github {
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: #110e0e;
+  font-size: 25px;
+}
+
+.social-github:hover {
+  background-color: #221c1c;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#image-template-container {
+  width: 100%;
+  height: 60vh;
+}
+
+#image-template-container img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+footer.footer {
+  padding: 10px 20px;
+  text-align: center;
+  color: #bbb;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-size: 14px;
+  border-top: 1px solid rgb(2, 45, 60);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 5, 5, 1) 0%,
+    rgba(3, 18, 69, 1) 49%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+footer.footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer.footer a:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  #templates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #left-template-container {
+    width: 100%;
+    border-right: none;
+  }
+
+  #right-template-container {
+    padding: 1vw;
+    width: 100%;
+  }
+
+  #image-template-container {
+    width: 100%;
+    height: 20vh;
+  }
+
+  #social h2 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .social-live-prev {
+    font-size: 14px;
+  }
+
+  .social-github {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #110e0e;
+    font-size: 18px;
+  }
+
+  .social-github:hover {
+    background-color: #221c1c;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+}
