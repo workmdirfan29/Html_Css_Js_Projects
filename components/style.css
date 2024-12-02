@@ -133,21 +133,19 @@ nav {
   transition: color 0.3s ease;
 }
 
-/* Increased size of home icon and added tooltip */
 #navlinks-container li a i.ri-home-9-line {
-  font-size: 25px; /* Increase icon size to match GitHub and Twitter */
+  font-size: 25px;
   color: #bbb;
   transition: color 0.3s ease;
 }
 
-/* Tooltip Styling */
 #navlinks-container li a {
   position: relative;
   display: inline-block;
 }
 
 #navlinks-container li:first-child a::after {
-  content: attr(title); /* Tooltip text comes from the title attribute */
+  content: attr(title);
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -248,7 +246,7 @@ nav {
   }
 
   #intropage {
-    padding-top: 20vw;
+    margin-top: 20vw;
   }
 }
 
@@ -262,6 +260,107 @@ nav {
   width: 100%;
   border-bottom: 1px solid #1f1f1f63;
   margin-bottom: 1vw;
+}
+
+#btn-components {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: #0056b3;
+}
+
+.btn-1 {
+  background-color: #0056b3;
+  color: #fff;
+  border: 2px solid #3999ff;
+}
+
+.btn-1:hover {
+  background-color: #003f7f;
+  border-color: #0f6cc9;
+}
+
+.btn-2 {
+  background-color: transparent;
+  color: #1665b9;
+  border: 2px solid #0958ac;
+}
+
+.btn-2:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border-color: #003f7f;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #fff;
+  }
+
+  #btn-components {
+    gap: 10px;
+  }
+
+  .btn {
+    border-color: #333;
+  }
+
+  .btn-1 {
+    background-color: #0056b3;
+    color: #fff;
+  }
+
+  .btn-1:hover {
+    background-color: #0f60b0;
+  }
+
+  .btn-2 {
+    background-color: transparent;
+    color: #0c60ba;
+    border-color: #056ddc;
+  }
+
+  .btn-2:hover {
+    background-color: #0a6ed8;
+    color: #fff;
+    border-color: #0466c8;
+  }
+}
+
+@media (max-width: 768px) {
+  #btn-components {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .btn-1 {
+    max-width: 300px;
+  }
+
+  .btn-2 {
+    max-width: 300px;
+  }
 }
 
 /* Scrollbar Track (background of the scrollbar) */
@@ -282,3 +381,175 @@ nav {
 ::-webkit-scrollbar-track {
   background: #111;
 }
+
+#Components-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.5vw 7vw;
+}
+
+#components-container-01 {
+  display: flex;
+  gap: 10px;
+}
+
+#left-components-container {
+  padding: 0.2vw 0.4vw;
+  width: 40%;
+  border-right: 2px solid #232324;
+}
+
+#left-components-container h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    to right,
+    #3b7ca8 0%,
+    rgb(16, 94, 162) 50%,
+    transparent 100%
+  );
+  background-position: bottom;
+  background-size: 100% 1.5px;
+  background-repeat: no-repeat;
+}
+
+#right-components-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 15px;
+}
+
+.avatar-component {
+  padding: 5px;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  padding-bottom: 5px;
+  background-image: linear-gradient(
+    to right,
+    #3b7ca8 0%,
+    rgb(16, 94, 162) 50%,
+    transparent 100%
+  );
+  background-position: bottom;
+  background-size: 100% 1.5px;
+  background-repeat: no-repeat;
+}
+
+.avatar-component .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.avatar-component img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.avatar-component .copy-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.av-comp-2 #avatar-wrapper {
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+
+.avatar-1,
+.avatar-2,
+.avatar-3 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.avatar-1 {
+  z-index: 2;
+  border: 2px solid #233e9e;
+}
+
+.avatar-2 {
+  margin-left: -30px;
+  z-index: 1;
+  border: 2px solid #46b2a6;
+}
+
+.avatar-3 {
+  margin-left: -35px;
+  z-index: 0;
+  border: 2px solid #1f33a3;
+}
+
+.avatar-1:hover {
+  rotate: -10deg;
+}
+
+.avatar-2:hover {
+  rotate: 15deg;
+}
+
+.avatar-3:hover {
+  rotate: -10deg;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #components-container-01 {
+    flex-direction: column;
+  }
+
+  #left-components-container {
+    border-right: none;
+    width: 100%;
+  }
+
+  #right-components-container {
+    width: 100%;
+  }
+
+  .avatar-component {
+    justify-content: center;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .avatar-1 {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+  }
+
+  .avatar-2 {
+    width: 40px;
+    height: 40px;
+    margin-left: -25px;
+  }
+  .avatar-3 {
+    width: 40px;
+    height: 40px;
+    margin-left: -35px;
+  }
+}
+  

@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Remix Icon CSS CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Toastr CSS -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <title>Components - Free Templates</title>
   </head>
   <body>
@@ -30,7 +39,7 @@
               </a>
             </li>
             <li>
-              <a  href="../main/about/about.html">About Us</a>
+              <a href="../main/about/about.html">About Us</a>
             </li>
             <li>
               <a target="_blank" href="../templates/index.html">Templates</a>
@@ -65,12 +74,12 @@
         </div>
         <ul>
           <li>
-            <a  href="#" title="Home">
+            <a href="#" title="Home">
               <i class="ri-home-9-line"></i>
             </a>
           </li>
           <li>
-            <a  href="../main/about/about.html">About Us</a>
+            <a href="../main/about/about.html">About Us</a>
           </li>
           <li>
             <a target="_blank" href="../templates/index.html">Templates</a>
@@ -85,15 +94,93 @@
             Components are reusable pieces of code that can be used to build web
             pages.
           </p>
+          <div id="btn-components">
+            <a class="btn btn-1" href="#">Get Started</a>
+            <a target="_blank" class="btn btn-2" href="../templates/index.html"
+              >Free Templates</a
+            >
+          </div>
         </div>
+        <!-- Components Container Start Here -->
+
         <div id="Components-container">
-          <div id="left-components-container">left</div>
-          <div id="right-components-container">Right</div>
+          <!-- Avatar Container Start -->
+          <div id="components-container-01">
+            <div id="left-components-container">
+              <h1>Avatar</h1>
+            </div>
+            <div id="right-components-container">
+              <!-- Avatar 1 with wrapper -->
+              <div
+                id="code-copy-1"
+                class="avatar-component av-comp-1"
+                onclick="CopyAvatar1()"
+              >
+                <div class="copy-btn">
+                  <i class="ri-file-copy-line"></i>
+                </div>
+                <div class="avatar">
+                  <img
+                    src="https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100221.jpg?ga=GA1.1.881379319.1733118417&semt=ais_hybrid"
+                    alt="User Avatar"
+                    class="avatar-image"
+                  />
+                </div>
+              </div>
+
+              <!-- Avatar 2 with wrapper -->
+              <div
+                id="code-copy-2"
+                class="avatar-component av-comp-2"
+                onclick="CopyAvatar2()"
+              >
+                <div class="copy-btn">
+                  <i class="ri-file-copy-line"></i>
+                </div>
+                <div id="avatar-wrapper">
+                  <div class="avatar avatar-1">
+                    <img
+                      src="https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100221.jpg?ga=GA1.1.881379319.1733118417&semt=ais_hybrid"
+                      alt="User Avatar"
+                      class="avatar-image"
+                    />
+                  </div>
+                  <div class="avatar avatar-2">
+                    <img
+                      src="https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100222.jpg?ga=GA1.1.881379319.1733118417&semt=ais_hybrid"
+                      alt="User Avatar"
+                      class="avatar-image"
+                    />
+                  </div>
+                  <div class="avatar avatar-3">
+                    <img
+                      src="https://img.freepik.com/free-vector/smiling-blonde-boy-hoodie_1308-174731.jpg?ga=GA1.1.881379319.1733118417&semt=ais_hybrid"
+                      alt="User Avatar"
+                      class="avatar-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Avatar Container End -->
         </div>
+
+        <!-- Components Container End Here -->
       </main>
     </div>
 
+    <!-- Lenis JS CDN -->
     <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script>
+    <!-- Toaster Js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <!--  custom JS (script.js) -->
     <script src="script.js"></script>
+    <!--  custom JS for copy functionality (copy.js) -->
+    <script src="copy.js"></script>
   </body>
 </html>

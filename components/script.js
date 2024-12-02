@@ -22,3 +22,5 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+console.log(toastr);
