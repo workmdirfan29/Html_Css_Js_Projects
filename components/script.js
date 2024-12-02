@@ -14,13 +14,32 @@ hamburgerIcon.addEventListener("click", openSidebar);
 closeIcon.addEventListener("click", closeSidebar);
 
 // Lenis
-const lenis = new Lenis();
+window.addEventListener("DOMContentLoaded", () => {
+  const lenis = new Lenis({
+    lerp: 0.1,
+  });
 
-function raf(time) {
-  lenis.raf(time);
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
   requestAnimationFrame(raf);
+});
+
+// Accordion code here | Toggle accordion open/close
+
+function toggleAccordion(header) {
+  const accordionItem = header.parentElement;
+
+  // Close other accordion items (optional, for single-open functionality)
+  const allItems = document.querySelectorAll(".accordion-item");
+  allItems.forEach((item) => {
+    if (item !== accordionItem) {
+      item.classList.remove("active");
+    }
+  });
+
+  // Toggle current accordion
+  accordionItem.classList.toggle("active");
 }
-
-requestAnimationFrame(raf);
-
-console.log(toastr);

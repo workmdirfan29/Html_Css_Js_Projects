@@ -166,6 +166,78 @@
           <!-- Avatar Container End -->
         </div>
 
+        <!-- Accordion container Start Here -->
+        <div id="components-container-02">
+          <div id="left-comp-container">
+            <h1>Accordion</h1>
+          </div>
+          <div id="right-comp-container">
+            <div class="accordion-wrapper">
+              <!-- Copy Button -->
+              <div class="copy-btn-wrapper" onclick="accordionCopy()">
+                <i class="ri-file-copy-line copy-icon"></i>
+              </div>
+
+              <!-- Accordion Items -->
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span class="accordion-title">Accordion Item 1</span>
+                  <i class="ri-arrow-down-s-line dropdown-icon"></i>
+                </div>
+                <div class="accordion-content">
+                  <p>This is the content for Accordion Item 1.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span class="accordion-title">Accordion Item 2</span>
+                  <i class="ri-arrow-down-s-line dropdown-icon"></i>
+                </div>
+                <div class="accordion-content">
+                  <p>This is the content for Accordion Item 2.</p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <span class="accordion-title">Accordion Item 3</span>
+                  <i class="ri-arrow-down-s-line dropdown-icon"></i>
+                </div>
+                <div class="accordion-content">
+                  <p>This is the content for Accordion Item 3.</p>
+                </div>
+              </div>
+            </div>
+            <div id="prerequisite-content" class="prerequisite-content">
+              <p class="cdn-text">
+                <strong class="note-title">NOTE:</strong>
+                To use Remix Icon, you need to include the CDN link in your HTML
+                file.
+                <br />
+                <div class="cdn-text2">
+                  <strong class="cdn-title">CDN:</strong>
+                <a
+                  href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+                  target="_blank"
+                  class="cdn-link"
+                  >Click here to add Remix Icon CDN</a
+                >
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion container End Here -->
+
+        <!-- View More Project Links Adding Here -->
+
+        <div id="viewmore">
+          <a
+          target="_blank"
+           href="https://freecomponentslib.vercel.app/">View More Components <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+
         <!-- Components Container End Here -->
       </main>
     </div>
